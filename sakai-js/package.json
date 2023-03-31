@@ -1,5 +1,6 @@
 {
     "name": "sakai-react",
+    "homepage": ".",
     "version": "9.0.0",
     "private": false,
     "scripts": {
