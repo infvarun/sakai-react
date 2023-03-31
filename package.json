@@ -1,12 +1,14 @@
 {
     "name": "sakai-react",
     "version": "9.0.0",
-    "private": true,
+    "private": false,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "export": "next build && next export",
+        "lint": "next lint",
+        "format": "prettier --write \"**/**/*.{js,ts,tsx}\""
     },
     "dependencies": {
         "@fullcalendar/core": "6.1.4",
@@ -22,5 +24,11 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-transition-group": "^4.4.5"
+    },
+    "devDependencies": {
+        "eslint": "8.35.0",
+        "eslint-config-next": "13.2.3",
+        "prettier": "2.8.4",
+        "sass": "^1.58.3"
     }
 }
